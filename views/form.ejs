@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title><%=formTitle%></title>
+        <link rel="stylesheet" href="css/form.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    
+        <body>
+            <div class="mainPage">
+                <div class="navbar"> 
+                  <h1> Welcome User Here add your Contact List ! </h1>
+                  <form  action="/logout" method="POST">
+                    <button class="logout" type="submit">Logout</button>
+                  </form>
+                </div>
+      
+                <form action="/first"><button type="submit">Go to contacts Page</button></form>
+      
+            
+                <div class="login-box">
+                    <h2>Add Your Contacts Here!</h2>
+                    <form action="/form" method="POST">
+                        <div class="user-box">
+                            <input type="text" name="username" placeholder="Type here">
+                            <label>First name*</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="lastname" placeholder="Type here">
+                            <label>Last name*</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="number" name="phonenumber" placeholder="10 digits">
+                            <label>Phone No*</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="about" placeholder="i.e.  I am a Student.">
+                            <label>About</label>
+                        </div>
+            
+                        <button type="submit">Submit</button>
+                    </form>
+                    
+
+                </div>
+            </div>
+        </body>
+</html>
